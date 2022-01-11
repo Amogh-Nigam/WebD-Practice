@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer tools</title>
+    <!-- Linking this is essential to make your font available else they wont show as it a web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+    <style>
+        #devtools
+        {
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            /* default size is aproxx 16px */
+            font-size: 30px;
+            /* can be noticed by background color */
+            line-height: 6em;
+            font-style: normal; 
+            /* COMMENT IT TO SEE DIFFERENCE */
+            /* em - is unit which is unit times the paraents font size nem is n times its size */
+            background-color: rgb(190, 154, 110);
+            /* changed the background color so recent change is taken / OVERWRITTEN CHANGE */
+            background-color: rgb(211 191 166);
+            /* bold vagera */
+            font-weight: bold;
+        }
+        p{
+            /* APPLY TO ALL P WETHER ITS WITH A ID OR A CLASS AND IF AN ID DOESN'T HAVE A SPECIFIC PROPERTY THEN THIS P PROPERTY WILL BE GIVEN TO IT */
+            /* font taken from google fonts */
+            /* 1px = 1/96 inch */
+            font-family: 'Luxurious Roman', cursive;
+            font-size: 16px;
+            font-style: italic;
+        }
+        span{
+            font-style: normal;
+            font-weight: bold;
+        }
+        /* no spacing in id and class names */
+        #firstpara
+        {
+            color: blueviolet; /* Colour by name */
+        }
+        #secpara
+        {
+            color: rgba(255, 217, 0, 0.911);
+        }
+        #thirdpara
+        {
+            color: #60dca4; 
+            /* 60 is for red, dc is for green, a4 is for blue, in hexadecimal */
+        }
+    </style>
+</head>
+<body>
+    <h3>Developer tools Tutorial</h3>
+    <p>LINE HEIGHT DEMO</p>
+    <p id="devtools" >This is a Tutorial for Chrome developer tools </p>
+    <!-- user agent stylesheet - browser default values  -->
+    <!-- console is for javascript -->
+    <!-- source give the source file -->
+    <h3>CSS Fonts</h3>
+    <p>Lets Play with fonts</p>
+    <p>This is <span>another</span> paragraph </p>
+
+    <!-- COLORS -->
+    <h3>Colors in CSS</h3>
+    <p id="firstpara">This is a paragraph from first box. Using Name</p>
+    <h3>Colors in CSS</h3>
+    <p id="secpara">This is a paragraph from first box. Using rgb</p>
+    <h3>Colors in CSS</h3>
+    <p id="thirdpara">This is a paragraph from first box. Using hexadecimal</p>
+    
+
+</body>
+</html>

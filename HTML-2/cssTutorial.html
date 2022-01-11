@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description of website">
+    <meta name="keywords" content="css, web dev, first css">
+    <title>CSS Tutorial</title>
+    <!-- INTERNAL AND EXTERNAL CSS HAS EQUAL PRECIDENCE ITS JUST THAT WHICH EVER IS WRITTEN 2nd THAT PROPERTY WOULD OVERWRITE THE PREVIOUS ONE  -->
+    <!-- since there is no border-radius in external css thus its property is not overwritten -->
+    <!-- internal css by defining style in head -->
+    <style>
+        /* Element selector */
+        p {
+            /* target all paragraphs in the markup */
+            color: purple;
+            border-radius: 20px;
+            /* !important makes that field constant and no one can stop it not even inline css */
+            background-color: burlywood ;
+        }
+        /* Id Selector */
+        #secondPara
+        {
+            /* using # symbol we can do the styling of all the elements with id as second para  */
+            color: blueviolet;
+            background-color: cadetblue;
+        }
+        /* Class selector */
+        .redElement
+        {
+            /* using . we tell that it is a class of name redElements */
+            color: red;
+        }
+        .bgBlue
+        {
+            background-color: lightblue;
+            
+        }
+        /* Grouping in CSS */
+        footer, span
+        {
+            background-color: pink;
+        }
+    </style>
+    <!-- External css if we moved this style sheet above the style tag in head it would not be used to give style to paragraph tag-->
+    <link rel="stylesheet" href="cssdemo.css">
+</head>
+<body>
+    <h3>This is CSS Tutorial </h3>
+    <!-- inline css -->
+    <p style="color: slateblue; background-color: aqua; " >This is inline css. This is a CSS Tutorial. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, nesciunt numquam ex nulla maiores repellendus.</p>  
+    <!-- inline css has more precidence than internal css and external css-->
+
+    <p id="externalcss">EXTERNAL CSS. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugiat debitis eaque blanditiis repellat autem optio eos, molestias rerum, maiores nesciunt, animi sunt expedita dolore quos nostrum pariatur deleniti. Amet?</p>
+
+    <!-- CSS SELECTORS -->
+    <h3>CSS Selectors</h3>
+    <p>This is a simple paragraph to demonstrate css selectors</p>
+    <p id="secondPara" >This is a another simple paragraph to demonstrate css selectors</p>
+    <div>
+        <!-- div cant do anything abt style internal and external p will affect the p inside div -->
+        <p class="redElement bgBlue">This is yet another simple paragraph inside div to demonstrate css selectors</p>
+        <br>
+        <span>This is a span</span>
+    </div>
+    <footer>This is a footer</footer>
+</body>
+</html>

@@ -1,12 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta data tags write to describe abt a website, set of data giving info abt other data HELP IN SEO (GOOGLE / BING ) -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Description of website">
+    <!-- Keywords tell the main words for which ur site is recommended in Search engines SEOs -->
+    <meta name="keywords" content="html, web dev, first html">
+    <!-- tells the SE whether to index ur page and follow ur links in webpage or not NOINDEX, NOFOLLOW -->
+    <meta name="robots" content="INDEX, FOLLOW">
+    <!-- external css is included for design -->
+    <link rel="stylesheet" href="style.css">
+    <!-- external javascript is included -->
+    <script src="rep.js"></script>
+    <title>Practice_1</title>
 </head>
 <body>
-    
+    <a name = "top"></a>
+    <!-- tags are like meta and name is its attribute -->
+    <!-- emmet - in-built in vscode, plugin for html fast typing -->
+    <!-- h1 to h6, must used to specify headings ONLY, as they help in Search engine optimization -->
+    <h1> amogh </h1>
+    <p>paragraph always starts with new line with spacing above and below </p>
+    <!-- add 20 number of sample words/ dummy text with lorem20 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, enim beatae. Vel qui impedit iure aliquid perspiciatis. Adipisci, consectetur? Amet asperiores corporis non omnis deserunt aliquid excepturi, explicabo nisi distinctio. Eos, voluptate! Eum impedit placeat explicabo exercitationem, animi a officia veritatis, facere vel quos adipisci.</p>
+    123
+    <br>New line no spacing but is avoided and use css
+    <br><strong>this is strongly emphasised in semantic</strong>
+    <p>strong and em can be more editied using css</p>
+    <br><p><em>The &lt;em&gt; element represents <strong>stress emphasis of its contents</strong>, while the &lt;i&gt; element represents <strong>text that is set off from the normal prose, such a foreign word, fictional character thoughts, or when the text refers to the definition of a word instead of representing its semantic meaning.</p>
+    The title of a work, such as the name of a book or movie, should use </strong> &lt;cite&gt;.</em>
+    <!-- adds a horizintal ruler -->
+    <br><hr>
+    <h2>Links and Images</h2>
+    <!-- links and images -->
+    <!-- <a href="website/link">click here to visit _____</a> -->
+    <!-- target="_blank" is an attribute to open the link in new tab -->
+    <br>
+    <a href="https://github.com/Amogh-Nigam/WebD-Practice" target="_blank">Git Web-D</a>
+    <br>
+    <a href="https://github.com/Amogh-Nigam/WebD-Practice">Git Web-D not given target = blank</a>
+    <br>
+    <a href="https://source.unsplash.com" target="_blank">Source unsplash - Random img collection</a>
+    <br>
+    <!-- Internal linking -->
+    <a href="#top">TOP</a>
+
+    <!-- <img src="source of image/complete path if it is in ur device" alt="if the image failed to upload then this is displayed"> -->
+    <!-- img tag has width and height attributes also but we set them using css -->
+    <br>
+    <img src="https://source.unsplash.com/200x100/?computer,future" alt="error" width="200" height="100">
+    <!-- first is width then is height -->
+    <hr>
+    <br>
+    <!-- list two types ordered and unordered -->
+    <h2>List</h2>
+    <ul type="circle">
+        <li>This is first item of my unordered list</li>
+        <li>This is second item of my unordered list</li>
+        <!-- nested list -->
+        <ul type = "disc">
+            <li>Another one</li>
+            <li>Another two</li>
+            <li>Another three</li>
+        </ul>
+        <li>This is third item of my unordered list</li>
+    </ul>
+    <ol type="1">
+        <li>This is first item of my ordered list</li>
+        <li>This is second item of my ordered list</li>
+        <li>This is third item of my ordered list</li>
+    </ol>
+    <hr>
+    <br>
+    <h2>Tables</h2>
+    <!-- Tables just like html has a head(thead) implies column name and a body(tbody) to put the data, filled row wise-->
+    <table>
+        <caption>Table Heading</caption>
+        <thead>
+            <!-- column heading here -->
+            <th>column 1</th>
+            <th>column 2</th>
+            <th>column 3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>r1c1</td>
+                <td>r1c2</td>
+                <td>r1c3</td>
+            </tr>
+            <tr>
+                <td>r2c1</td>
+                <td>r2c2</td>
+                <td>r2c3</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <br>
+    <!-- FORMS -->
+    <h2>Input/Form</h2>
+    <form action="file in back end where data is saved">
+        <!-- simple text input from user -->
+        Name : <input type="text" value="your name">
+        Email : <input type="email" name="">
+        <!-- No CSS thats why name and email is in same line, CAN use <br> but we dont we use css to give margin and padding, br is not recommmended thats why we use div -->
+        <br><br>
+        <div>
+            Name : <input type="text" name="myname" id="same as written in label tag">
+        </div>
+        <br>
+        <div>
+            <!-- for = "idname" in label -->
+            <label for="email">Email : </label>
+            <input type="email" name="when putting data in backend, to tell in which data go to which section for storing we put name" id="email">
+        </div>
+        <br>
+        <div>
+            Date : <input type="date" name="mydate" id="">
+        </div>
+        <br>
+        <div>
+            Number : <input type="number" name="mynumber" id="">
+        </div>
+        <br>
+        <div>
+            Are you eligible : <input type="checkbox" name="myeligibility" id="">
+        </div>
+        <br>
+        <!-- now when you click on checked box you can select the eligibility option  -->
+        <label for="checkbox">Checked Box click here</label>
+        <div>
+            <!-- keeping checkbox checked -->
+            <input type="checkbox" name="myeligibility" checked id="checkbox">
+        </div>
+        <br>
+        <div>
+            Gender : Male <input type="radio" name="mygender" id=""> 
+            Female <input type="radio" name="mygender" id="">
+            Other <input type="radio" name="mygender" id="">
+        </div>
+        <br>
+        <div>
+            <!-- gives a text area to write, can change its size from website,input big paragraphs -->
+            <!-- but looks bad -->
+            Write about Yourself : <textarea name="mytext" title = "looks bad" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <!-- simple br dirty way -->
+            Write about Yourself : <br><br>
+            <textarea name="mytext" id="" cols="90" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car : </label>
+            <select name="mycar" id="car">
+                <option value="inn">Innova</option>
+                <option value="swt">Swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car : </label>
+            <select name="mycar" id="car">
+                <!-- selected that automactically  -->
+                <option value="inn"  >Innova</option>
+                <option value="swt" selected >Swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <!-- SUBMIT BUTTON -->
+            <!-- but now we cant as there is no backend if submit this data is shown in address bar -->
+            <!-- http://127.0.0.1:5500/HTML-2/file%20in%20back%20end%20where%20data%20is%20saved?myname=amogh&when+putting+data+in+backend%2C+to+tell+in+which+data+go+to+which+section+for+storing+we+put+name=am%40gmail.com -->
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+        <br>
+        <div>
+            Submit : <input type="submit" value="Comes inside the box">
+        </div>
+    </form>
+
+    <!-- INLINE AND BLOCK ELEMENTS -->
+    <!-- BLOCK element - A block-level element always starts on a new line and takes up the full width available. like paragraph div ul li ol headings -->
+    <!-- border utna h jitna content h -->
+    <strong style="border: 2px solid blue;" >paragraph 2</strong>
+    <div style="border: 2px solid blue;" >paragraph 2</div>
+    <!-- block element take full block thus next element start from next block -->
+    <p style="border: 2px solid red;" >paragraph 1</p>
+    <!-- An inline element does not start on a new line and it only takes up as much width as necessary. like span strong anchor img em -->
+    <span>span 1</span>
+    <span>span 2</span>
+    <!-- using css you can make block element inline -->
+
+    <!-- ID's and Classes -->
+    <!-- id is the name given to that element so that it can be identified as a purely unique and singular entity. so that css and java(backend) can identify them for editing  -->
+    <!-- class - assume there are 100 elements to have red background and white content, when defined a class with SAME NAME HERE redBg IT will have that style of that class -->
+    <!-- multiple class can me given to a element and multiple elements can have a single class -->
+    <!-- class = "class1 class2 class3 ... " -->
+    <div id="main box" class="redBG" autocapitalize="true" >
+        hi
+    </div>
+    <!-- Emmet shortcut to write HTML fast-->
+    <!-- . is for class and # is for id -->
+    <!-- span.redBg press enter to make a span with class redbg -->
+    <span class="redBg"></span>
+    <!-- span#mainSpan press enter to make span with id mainSpan -->
+    <span id="mainSpan">lorem345</span>
+    <!-- div.class1.class2.class3 enter -->
+    <div class="class1 class2 class3">
+        <H1>EMMET</H1>
+    </div>
+    <!-- emmet takes div tag as default -->
+    <!-- .class1 enter -->
+    <div class="class1"></div>
+    <!-- Creating multiple elements using emmet -->
+    <!-- span.class1.class2.class3*4 enter -->
+    <span class="class1 class2 class3">First</span>
+    <span class="class1 class2 class3">Second</span>
+    <span class="class1 class2 class3">3rd</span>
+    <span class="class1 class2 class3">4th</span>
+    <!-- css can be done for a perticular id(unique) and in bulk for a class of elements, that class has various properties defined in it -->
+
+    <!-- HTML ENTITIES -->
+    <h1>HTML      ENTITIES</h1>
+    <!-- start with &__; help in showing html reversed characters, special characters, surrency -->
+    <!-- html truncate all the space to 1 space by default -->
+    <div class="containers">
+        <p>HTML &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENTITIES</p>
+        <!-- non breaking space not used as much -->
+        <p>HTML &nbsp;&nbsp;&nbsp;&nbsp; ENTITIES</p>
+        <div class="container">
+            <p>paragraph is written by &lt;p&gt;</p>
+            <p>copywrite is written by &copy;</p>
+            <p> Empty character is written like this &#8203;</p>    
+        </div>
+    </div>
+
+    <!-- SEMANTICS -->
+    <!-- https://developer.mozilla.org/en-US/docs/Glossary/Semantics -->
+    <!-- article figure aside details ... -->
+    <!-- NON SEMANTIC elements - div span not tells the search engines what is what -->
+    <details>
+        <summary>I have keys but no doors. I have space but no room. You can enter but can't leave. What am I?</summary>
+        A keyboard. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laborum maiores ex. Ducimus, dolores accusantium.
+    </details>
+    <details>
+        I have keys but no doors. I have space but no room. You can enter but can't leave. What am I?
+        A keyboard. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laborum maiores ex. Ducimus, dolores accusantium.
+    </details>
+
+
+
 </body>
 </html>
