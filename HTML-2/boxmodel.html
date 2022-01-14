@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *
+        {
+            /* uinversal selector for all elements */
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .container
+        {
+            background-color: bisque;
+            border: 5px solid rgb(226, 96, 226);
+            /* We can set margin/padding for  top, bottom, left and right like this */
+            /* padding-top: 79px;
+            padding-bottom: 79px;
+            padding-left: 34px; 
+            padding-right: 79px;*/
+
+            /* margin-top: 3px;
+            margin-bottom: 5px;
+            margin-left: 34px;
+            margin-right:5px ; */
+
+            /* margin = top right bottom left;  */
+            /* padding = top right bottom left;  */
+
+            /* padding: 23px 56px 6px 78px;   */
+            /* margin: 23px 56px 6px 78px;   */
+        
+            /* padding: y(top/bottom) x(left/right); */
+            /* margin: y(top/bottom) x(left/right); */
+            padding: 34px 19px;
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 533px; /* it contain the margine + border + padding + content */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is Heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quas quos perspiciatis eveniet, eligendi beatae repellat magni explicabo voluptatum consequuntur.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is Heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quas quos perspiciatis eveniet, eligendi beatae repellat magni explicabo voluptatum consequuntur.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is Heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quas quos perspiciatis eveniet, eligendi beatae repellat magni explicabo voluptatum consequuntur.</p>
+    </div>
+
+    <!-- Alignment -->
+    <h3>Alignment</h3>
+    <div class="container">
+        <div class="fruits" id="item">
+            <h3>fruits</h3>
+            <p class="fruitpara" id="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, expedita aut voluptas repellat suscipit voluptate quis. Eaque sed aperiam fugiat incidunt dolor architecto laudantium doloribus adipisci quam illum atque blanditiis voluptas reprehenderit culpa, expedita a?
+            </p>
+        </div>
+        <div class="computer" id="item">
+            <h3>computer</h3>
+            <p class="computerpara" id="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, beatae placeat nulla veniam sapiente impedit reiciendis sit labore molestias, totam hic ullam doloremque. Mollitia corrupti voluptas, molestiae aliquam harum exercitationem enim quaerat ipsam alias? Reprehenderit.
+            </p>
+        </div>
+        <div class="stationary" id="item">
+            <h3>stationary</h3>
+            <p class="stationarypara" id="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellat magni id fugit cumque magnam aliquid, maxime vero unde nobis eligendi distinctio rerum hic ullam. Ratione soluta vitae sequi cupiditate quia sit blanditiis dignissimos laboriosam?
+            </p>
+        </div>
+    </div>
+
+
+</body>
+</html>

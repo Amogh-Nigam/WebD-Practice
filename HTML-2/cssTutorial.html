@@ -12,13 +12,14 @@
     <!-- internal css by defining style in head -->
     <style>
         /* Element selector */
-        p {
-            /* target all paragraphs in the markup */
+        /* p {
+            target all paragraphs in the markup
             color: purple;
             border-radius: 20px;
-            /* !important makes that field constant and no one can stop it not even inline css */
+            !important makes that field constant and no one can stop it not even inline css
             background-color: burlywood ;
-        }
+        } */
+        
         /* Id Selector */
         #secondPara
         {
@@ -42,6 +43,48 @@
         {
             background-color: pink;
         }
+        #firstpara
+        {
+            background-color: aquamarine;
+            height: 100px;
+            width: 400px;
+            border: 4px green solid;
+            /* One and the same thing if written like this or not */
+            /* border: 4px solid green; */
+            /* border-width: 4px;
+            border-style: solid;
+            border-color: green; */
+            border-radius: 15px;
+        }
+        /* id and class names are acc to c++ variable names rules */
+        #_2ndpara
+        {
+            background-color: cadetblue;
+            height: 100px;
+            width: 400px;
+            /* can style a single para at a time */
+            border-top: 4px solid rgb(48, 163, 54);
+            border-left: 4px solid rgb(54, 64, 218);
+            border-right: 4px solid rgb(221, 45, 221);
+            border-bottom: 4px solid rgba(223, 219, 22, 0.856);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 20px;
+        }
+        #_3rdpara
+        {
+            height: 500px;
+            width: 1000px;
+            border: 4px solid;
+            background-image: url("https://source.unsplash.com/240x240/?light,nature");
+            background-repeat: no-repeat;/* repeat-x and repeat-y will make repeation in x and y axis */
+            background-position: center center;
+            /* background-position: bottom left; */
+            /* background-position: top center; */
+            /* background-position: 190px 0px;  */
+            /* 190px in x axis from right border and 250 px in y axis from top border*/
+        }
     </style>
     <!-- External css if we moved this style sheet above the style tag in head it would not be used to give style to paragraph tag-->
     <link rel="stylesheet" href="cssdemo.css">
@@ -64,6 +107,15 @@
         <br>
         <span>This is a span</span>
     </div>
+
+    <!-- Border -->
+    <h3>Borders Height, Width, Background</h3>
+    <p id="firstpara">This is first paragraph</p>
+    <h3>This is second para</h3>
+    <p id="_2ndpara">This is a second paragraph</p>
+    <h3>with background image</h3>
+    <p id="_3rdpara">This is a third paragraph with background image</p>
+
     <footer>This is a footer</footer>
 </body>
 </html>
